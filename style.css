@@ -1,0 +1,34 @@
+
+li:hover {
+  background-color: yellow;
+}
+
+/** 
+class selector schrijf door . te maken voor de naam:
+**/
+.warning {
+  background-color: orange;
+}
+/**
+id selector schrijf je door # te zetten voor de naam
+**/
+#koel {
+  color: lightblue;
+}
+
+
+
+
+
+
+
+p.highlighted, h1.highlighted {
+  background-color:lightyellow;
+}
+
+/* hetzelfde als dit: */
+
+
+p.highlighted {
+  background-color:lightyellow;
+}

@@ -1,0 +1,49 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header h1 {
+    font-size: 30px;
+  }
+  
+  header h2 {
+    font-size: 25px;
+    color: #ff1b30;
+  }
+  
+  header h1,
+  header h2 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  #tesla-car {
+    width: 100%;
+  }
+  
+  footer {
+    padding: 27px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .wrapper {
+    /* dan is het maximum 1000 maar bij verkleinen gaat de inhoud mee kleiner schalen */
+    max-width: 1000px;
+    padding: 70px;
+    background-color: white;
+    height: 100%;
+  }
+  
+  .flex-column-center {
+    /* om flexbox te gebruiken */
+    display: flex;
+    /* om alle flex elementen onder elkaar te zeten */
+    flex-direction: column;
+      /* alle elementen centreren */
+    align-content: center;
+  }

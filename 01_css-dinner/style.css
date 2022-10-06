@@ -1,0 +1,40 @@
+
+body {
+    background-color: aqua;
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  p,
+b {
+  width: 100px;
+  min-height: 100px;
+  padding:10px;
+}
+p {
+  background-color: white;
+  border-radius: 12px;
+  padding:10px;
+  display:flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+b {
+  display: block;
+  background-color: brown;
+}
+
+span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 12px;
+}
+
+b:nth-last-child(3) {
+    border: 5px solid yellow;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "syntra_html",
+  "version": "1.0.0",
+  "description": "exercises for HTML-CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "surge": "surge . karim-html-css-syntra_2023.surge.sh"
+  },
+  "author": "Karim Dehbi",
+  "license": "ISC"
+}
