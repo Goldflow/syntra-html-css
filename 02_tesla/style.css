@@ -51,6 +51,10 @@ body {
 }
 
 section {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
   padding: 5px;
+}
+
+li {
+  list-style-image: url(bg_listitem.jpg);
 }
