@@ -9,13 +9,13 @@ header h1 {
 header h2 {
   font-size: 25px;
   color: #ff1b30;
+  padding: 10px 0 20px
 }
 
 header h1,
 header h2 {
   font-weight: bold;
   margin: 0;
-  padding: 10px 0;
 }
 
 #tesla-car {
