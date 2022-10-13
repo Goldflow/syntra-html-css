@@ -47,3 +47,8 @@ header {
       /* alle elementen centreren */
     align-content: center;
   }
+
+  section {
+    border-bottom: 1px solid black;
+    padding: 5px;
+  }
