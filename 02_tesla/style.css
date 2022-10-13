@@ -53,8 +53,16 @@ body {
 section {
   border-bottom: 1px solid;
   padding: 5px;
+  font-size: 12px;
 }
 
 li {
-  list-style-image: url(bg_listitem.jpg);
+    /* list-style-image: url(bg_listitem.jpg); */
+    /* alternatief voor bovenstaande met meer flexibilteit voor aanpassen van 
+    positie & grootte van de list style afbeelding  */
+    background-image: url(bg_listitem.jpg);
+    background-repeat: no-repeat;
+    background-size: 8px;
+    padding-left: 10px;
+    background-position-y: center;
 }
