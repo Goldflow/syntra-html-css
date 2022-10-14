@@ -2,6 +2,8 @@
 
 ## productivity
 
-select multiple lines
+### select multiple lines
 
 ctrl+alt arrow down / up
+
+### generate lorem ipsuum
