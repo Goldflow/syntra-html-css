@@ -75,6 +75,11 @@ figure {
   justify-content: center;
 }
 
+img {
+    /* as we set 10vw for padding on main, it's best that the image never exceeds 80vw so it scales */
+    max-width: 80vw;
+}
+
 article button {
   background-color: black;
   color: white;
