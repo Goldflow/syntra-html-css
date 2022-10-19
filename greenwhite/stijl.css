@@ -19,12 +19,15 @@ body {
 main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap-reverse; /* bijkomstige info / overzicht artikels lijkt beter vanboven dan vanonder */
   gap: 1rem;
   padding: 1rem;
 }
 section {
   display: flex;
   flex-direction: column;
+  /*we don't want the default stretch for align items*/
+  align-items: center;
   gap: 2rem;
 }
 aside {
@@ -36,7 +39,11 @@ aside {
 article {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5rem;
+}
+article div {
+  width: 200px;
 }
 figure {
   width: 190px;
