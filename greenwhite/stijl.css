@@ -35,6 +35,7 @@ aside {
   flex-direction: column;
   gap: 2rem;
   max-width: 30vw;
+  min-width: 200px;
 }
 article {
   display: flex;
