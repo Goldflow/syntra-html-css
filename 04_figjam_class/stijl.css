@@ -71,6 +71,18 @@ article {
     gap: 36px;
 }
 
+article h1 {
+    /*komt overeen met 21px*/
+    font-size: 2.1rem;
+}
+
+article h2 {
+    /*komt overeen met 30px*/
+    font-size: 3rem;
+    /*vetgedrukt*/
+    font-weight: bold;
+}
+
 article button {
     background-color: black;
     color: white;
@@ -84,7 +96,7 @@ article button {
     dit geeft rounding on border;
     indien niet zeker welke waarde, gebruik 4px standaard
     */
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 article button:hover {
