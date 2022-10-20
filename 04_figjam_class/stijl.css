@@ -1,34 +1,67 @@
 /* drie basisstijlregels om je te helpen */
-:root {font-size: 62.5%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
 /* 1rem = 10px
  1.4 = 14px
 */
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 /* hier komt jouw css */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  background-color: #699bf7;
+}
+
+nav {
+  /* we zetten hier achtergrond kleur op wit in, omdat anders het blauw zal zijn, zie hierboven */
+  background-color: white;
 }
 
 /* dit selecteert de ul binnen het nav element*/
 nav ul {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 /* dit selecteert de li, binnen de ul binnen het nav element*/
 nav ul li {
   padding: 34px 34px 39px 34px;
   /*pointer zorgt ervoor dat je een "handje" krijgt, klassiek gebruikt voor links*/
-  cursor: pointer;
 }
 
 nav ul li:hover {
     /* easy way */
     background-color: black;
     color: white;
+    cursor: pointer;
+  }
+
+aside {
+  background-color: #c8b8ff;
+  padding: 22px;
+  text-align: center;
+}
+
+main {
+    padding: 62px 11vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+figure {
 }
