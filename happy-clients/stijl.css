@@ -1,0 +1,35 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hier komt jouw css */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: customFont1;
+  src: url(BAUHS93.TTF);
+}
+
+h1 {
+  padding: 10px;
+  font-size: 10rem;
+  font-family: customFont1;
+}
