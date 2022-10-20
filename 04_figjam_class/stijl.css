@@ -72,9 +72,20 @@ main {
     dan is 10vw gelijk aan 100px
     */
     padding: 62px 11vw;
+    /*
+    we stellen row gap hier in, zodat enkel wanneer flex-wrap geactiveerd wordt,
+     we een ruimte van 36 px tussen de rijen gaan zetten
+    */
+    row-gap: 36px;
 }
 
 article {
+    /*
+    belangrijk hier vaste breedte in te stellen,
+    want anders gaat flex-wrap niet correct functioneren
+    (neem dan max-content possible)
+    */
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -112,7 +123,4 @@ article button:hover {
     background-color: white;
     color: black;
     cursor: pointer;
-}
-
-figure {
 }
