@@ -74,11 +74,23 @@ article {
 article button {
     background-color: black;
     color: white;
+    border: none;
+    padding: 16px 27px;
+    /* we nemen de breedte van de content,
+    in dit geval, de tekst "Get Started"
+    */
+    width: fit-content;
+    /*
+    dit geeft rounding on border;
+    indien niet zeker welke waarde, gebruik 4px standaard
+    */
+    border-radius: 4px;
 }
 
 article button:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 figure {
