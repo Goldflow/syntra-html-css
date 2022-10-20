@@ -54,6 +54,14 @@ aside {
 }
 
 main {
+    /*
+    vh staat voor view height
+    vw staat voor view width
+
+    deze unit is percentage van je viewport
+    als je volledige breeddte 1000px is
+    dan is 10vw gelijk aan 100px
+    */
     padding: 62px 11vw;
 }
 
@@ -61,6 +69,16 @@ article {
     display: flex;
     flex-direction: column;
     gap: 36px;
+}
+
+article button {
+    background-color: black;
+    color: white;
+}
+
+article button:hover {
+    background-color: white;
+    color: black;
 }
 
 figure {
