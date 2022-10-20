@@ -54,6 +54,15 @@ aside {
 }
 
 main {
+    display: flex;
+    /*dit zorgt ervoor,
+    dat als de elementen niet meer in de huidige flex configuratie passen
+    ze op een nieuwe lijn komen */
+    flex-wrap: wrap-reverse;
+    /*
+    als de elementen elk op aparte lijn komen, worden ze gecentreerd
+    */
+    justify-content: space-around;
     /*
     vh staat voor view height
     vw staat voor view width
