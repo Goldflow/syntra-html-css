@@ -1,6 +1,15 @@
 
 li:hover {
-  background-color: yellow;
+    background-color: lightblue;
+    color: black;
+}
+
+a:link {
+  color: orange;
+}
+
+a:link:hover {
+  color: black;
 }
 
 /** 
@@ -15,14 +24,6 @@ id selector schrijf je door # te zetten voor de naam
 #koel {
   color: lightblue;
 }
-
-
-
-ul.mooi {
-
-}
-
-
 
 p.highlighted, h1.highlighted {
   background-color:lightyellow;
