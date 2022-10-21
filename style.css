@@ -1,15 +1,38 @@
+main li {
+  padding: 5px;
+  color: orange;
+  text-align: center;
+}
 
-li:hover {
-    background-color: lightblue;
-    color: black;
+h2 {
+  padding-bottom: 25px;
+  color: goldenrod;
+  text-align: center;
+}
+
+main li:nth-child(odd) {
+  background-color: darkgray;
+}
+main li:nth-child(even) {
+  background-color: gray;
+}
+
+main li:hover {
+  background-color: gold;
+  color: black;
+}
+
+main a {
+  display: inline-block;
+  width: 100%;
 }
 
 a:link {
-  color: orange;
+  color: white;
 }
 
 a:link:hover {
-  color: black;
+  color: gray;
 }
 
 /** 
@@ -23,15 +46,4 @@ id selector schrijf je door # te zetten voor de naam
 **/
 #koel {
   color: lightblue;
-}
-
-p.highlighted, h1.highlighted {
-  background-color:lightyellow;
-}
-
-/* hetzelfde als dit: */
-
-
-p.highlighted {
-  background-color:lightyellow;
 }
