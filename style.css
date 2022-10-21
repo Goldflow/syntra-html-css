@@ -2,12 +2,7 @@ main li {
   padding: 5px;
   color: orange;
   text-align: center;
-}
-
-h2 {
-  padding-bottom: 25px;
-  color: goldenrod;
-  text-align: center;
+  transition: transform 0.7s ease-out;
 }
 
 main li:nth-child(odd) {
@@ -16,6 +11,22 @@ main li:nth-child(odd) {
 main li:nth-child(even) {
   background-color: gray;
 }
+
+main li:nth-child(odd):hover {
+  transform: rotate(3deg);
+}
+
+main li:nth-child(even):hover {
+  transform: rotate(-3deg);
+}
+
+
+h2 {
+  padding-bottom: 25px;
+  color: goldenrod;
+  text-align: center;
+}
+
 
 main li:hover {
   background-color: gold;
@@ -33,7 +44,12 @@ a:link {
 
 a:link:hover {
   color: gray;
+  /**
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  **/
 }
+
 
 /** 
 class selector schrijf door . te maken voor de naam:
