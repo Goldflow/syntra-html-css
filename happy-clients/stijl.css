@@ -105,6 +105,23 @@ article img {
   border-radius: 50%;
 }
 
-article caption {
+article h3 {
+
+}
+
+article h4 {
   font-style: italic;
+  position: relative;
+  padding-bottom: 35px;
+}
+
+article h4:after {
+  content: "";
+  background: #f38181;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  height: 3px;
+  width: 60px;
+  text-align: center;
 }
