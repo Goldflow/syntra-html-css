@@ -28,10 +28,18 @@ html {
   src: url(media/fonts/BAUHS93.TTF);
 }
 
-h1 {
-  padding: 10px;
-  font-size: 2rem;
-  font-family: customFont1;
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: Lato;
+  src: url(media/fonts/Lato-Regular.ttf);
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+  font-family: Fasthand;
+  src: url(media/fonts/Fasthand-Regular.ttf);
 }
 
 body {
@@ -44,7 +52,37 @@ body {
   /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
   background-color: #eee;
   /* to set padding to the body left & right*/
-  padding: 0 15vw;
+}
+
+nav {
+  align-items: center;
+  padding: 10px;
+  background-color: #f38181;
+  width: 100%;
+}
+
+nav img {
+  height: 100%;
+}
+
+nav,
+nav section,
+nav section ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 2rem;
+  font-family: Fasthand;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 2rem;
+  font-family: Lato;
 }
 
 main section {
@@ -52,10 +90,21 @@ main section {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-evenly;
+  padding: 0 15vw;
 }
 
 article {
   width: 520px;
   height: 170px;
-  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+}
+
+article img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+article caption {
+  font-style: italic;
 }
