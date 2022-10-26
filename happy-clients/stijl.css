@@ -25,11 +25,37 @@ html {
 @font-face {
   /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
   font-family: customFont1;
-  src: url(BAUHS93.TTF);
+  src: url(media/fonts/BAUHS93.TTF);
 }
 
 h1 {
   padding: 10px;
-  font-size: 10rem;
+  font-size: 2rem;
   font-family: customFont1;
+}
+
+body {
+  /** set the url of the image **/
+  background-image: url(media/images/berg.png);
+  /** set image size to "cover, this will ensure the images always covers either the maximum amount of height of width (whatever it is reaching first) **/
+  background-size: cover; /** alternatively set to 100% **/
+  /** to ensure we do not repeat the background image **/
+  background-repeat: no-repeat;
+  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
+  background-color: #eee;
+  /* to set padding to the body left & right*/
+  padding: 0 15vw;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+article {
+  width: 520px;
+  height: 170px;
+  background-color: lightblue;
 }
