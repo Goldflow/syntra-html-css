@@ -37,30 +37,58 @@ header {
   padding: 2rem;
 }
 
-h2 {
-    /*zodat ons pseudelement positoin absolute effect kan hebben*/
-    position: relative;
+h2,
+h4 {
+  /*zodat ons pseudelement position absolute effect kan hebben*/
+  position: relative;
 }
 
-header h2::after { /* we maken een child element in de h2*/
-    content: '';
-    background-color: #f38181;
-    height: 4px;
-    width: 60px;
-    position: absolute;
-    top: 21px;
-    left: calc(100% - (50%));
+header h2::after,
+article div h4::after {
+  /* we maken een child element in de h2*/
+  content: "";
+  background-color: #f38181;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  top: 21px;
+  left: 0;
+}
+
+header h2::after {
+  /* this left will overwrite above declared style rule as it comes after*/
+  left: calc(100% - (50% + 30px));
+}
+
+header h4::after {
+  /* this left will overwrite above declared style rule as it comes after*/
+  width: 200px;
 }
 
 main {
-    padding: 150px 300px;
-  }
+  padding: 150px 300px;
+}
 
-  main article {
-    width: 200px;
-  }
+main article {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+}
 
-  main article img {
-    border-radius: 50%;
-    width: 80%;
-  }
+main article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* alternatief voor bovenstaande:
+op
+
+h4 {
+    padding: 20px 0;
+}
+*/
+
+main article img {
+  border-radius: 50%;
+  width: 110px;
+}
