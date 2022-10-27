@@ -66,7 +66,14 @@ header h4::after {
 }
 
 main {
-  padding: 150px 300px;
+  padding: 150px;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap; /*wrapping & rapping*/
+    justify-content: space-between;
+    gap: 50px;
 }
 
 main article {
