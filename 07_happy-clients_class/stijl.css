@@ -1,6 +1,66 @@
 /* drie basisstijlregels om je te helpen */
-:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
-html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;}
+:root {
+  font-size: 100%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 /* hier komt jouw css */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f38181;
+}
+
+body {
+  background-image: url(media/images/berg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
+  background-color: rgba(209, 209, 209, 0.644);
+  /* to set padding to the body left & right*/
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+h2 {
+    /*zodat ons pseudelement positoin absolute effect kan hebben*/
+    position: relative;
+}
+
+header h2::after { /* we maken een child element in de h2*/
+    content: '';
+    background-color: #f38181;
+    height: 4px;
+    width: 60px;
+    position: absolute;
+    top: 21px;
+    left: calc(100% - (50%));
+}
+
+main {
+    padding: 150px 300px;
+  }
+
+  main article {
+    width: 200px;
+  }
+
+  main article img {
+    border-radius: 50%;
+    width: 80%;
+  }

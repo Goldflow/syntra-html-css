@@ -166,8 +166,8 @@ article h4 {
   padding-bottom: 1.5rem;
 }
 
-article h4:after,
-header h2:after {
+article h4::after,
+header h2::after {
   content: "";
   background: #f38181;
   position: absolute;
