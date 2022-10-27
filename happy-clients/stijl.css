@@ -52,6 +52,7 @@ body {
   /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
   background-color: #eee;
   /* to set padding to the body left & right*/
+  font-family: Lato;
 }
 
 nav {
@@ -73,16 +74,38 @@ nav section ul {
   gap: 10px;
 }
 
-h1 {
+nav section ul {
+  text-transform: uppercase;
+}
+
+#current {
+  color: gold;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header h1 {
   padding: 10px;
   font-size: 2rem;
   font-family: Fasthand;
 }
 
-h2 {
+header h2 {
   padding: 10px;
   font-size: 2rem;
-  font-family: Lato;
+  position: relative;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
 }
 
 main section {
@@ -94,10 +117,16 @@ main section {
 }
 
 article {
-  width: 520px;
+  width: 600px;
   height: 170px;
   display: flex;
   justify-content: space-around;
+}
+
+article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 article img {
@@ -105,23 +134,32 @@ article img {
   border-radius: 50%;
 }
 
-article h3 {
+article p {
+  line-height: 1.5rem;
+  color: #888;
+}
 
+article h3 {
+  text-transform: uppercase;
 }
 
 article h4 {
   font-style: italic;
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 1.5rem;
 }
 
-article h4:after {
+article h4:after, header h2:after {
   content: "";
   background: #f38181;
   position: absolute;
   top: 35px;
   left: 0;
-  height: 3px;
+  height: 4px;
   width: 60px;
-  text-align: center;
+}
+
+header h2:after {
+  top: 60px;
+  left: calc( 100% - ( 50% + 30px ) );
 }
