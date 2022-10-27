@@ -17,16 +17,21 @@ body {
   background-color: lightgray;
 }
 
+main {
+  position: relative;
+}
+
 article {
   background-color: gold;
   height: 400px;
   width: 200px;
-  z-index: 0;
 }
 
 aside {
   background-color: white;
   height: 400px;
   width: 200px;
-  z-index: 0;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
 }
