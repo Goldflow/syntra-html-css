@@ -23,21 +23,14 @@ html {
 
 /* we gaan de font family declareren */
 @font-face {
-  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
-  font-family: customFont1;
-  src: url(media/fonts/BAUHS93.TTF);
-}
-
-/* we gaan de font family declareren */
-@font-face {
-  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+    /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
   font-family: Lato;
   src: url(media/fonts/Lato-Regular.ttf);
 }
 
 /* we gaan de font family declareren */
 @font-face {
-  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+    /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
   font-family: Fasthand;
   src: url(media/fonts/Fasthand-Regular.ttf);
 }

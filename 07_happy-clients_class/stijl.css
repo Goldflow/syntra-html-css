@@ -11,6 +11,22 @@ html {
   box-sizing: inherit;
 }
 
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+font-family: Lato;
+src: url(media/fonts/Lato-Regular.ttf);
+}
+
+/* we gaan de font family declareren */
+@font-face {
+  /* dit is de naam van de font, pak geen standaard / bestaande fontnaam*/
+font-family: Fasthand;
+src: url(media/fonts/Fasthand-Regular.ttf);
+}
+
+
+
 /* hier komt jouw css */
 
 nav {
@@ -18,6 +34,17 @@ nav {
   justify-content: space-around;
   padding: 20px;
   background-color: #f38181;
+  /* om de img & section verticaal te centreren */
+  align-items: center;
+}
+
+nav img {
+  height: 4rem;
+}
+
+nav section ul {
+  display: flex;
+  gap: 2rem;
 }
 
 body {
@@ -26,7 +53,11 @@ body {
   background-repeat: no-repeat;
   /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
   background-color: rgba(209, 209, 209, 0.644);
-  /* to set padding to the body left & right*/
+  font-family: Lato;
+}
+
+h1 {
+  font-family: Fasthand;
 }
 
 header {
@@ -35,7 +66,7 @@ header {
   align-items: center;
   gap: 2rem;
   /* 16.5 px * 7 */
-  padding: 7rem; 
+  padding: 7rem;
 }
 
 h2,
@@ -67,14 +98,15 @@ header h4::after {
 }
 
 main {
-  padding: 150px;
+  /* to set padding to the body left & right*/
+  padding: 0 150px;
 }
 
 main section {
-    display: flex;
-    flex-wrap: wrap; /*wrapping & rapping*/
-    justify-content: space-between;
-    gap: 50px;
+  display: flex;
+  flex-wrap: wrap; /*wrapping & rapping*/
+  justify-content: space-between;
+  gap: 50px;
 }
 
 main article {
