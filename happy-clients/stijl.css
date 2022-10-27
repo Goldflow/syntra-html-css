@@ -50,7 +50,7 @@ body {
   /** to ensure we do not repeat the background image **/
   background-repeat: no-repeat;
   /** in case background image doesn't completely cover background, it can be good to set background color to the background color of the image **/
-  background-color: #eee;
+  background-color: rgba(209, 209, 209, 0.644);
   /* to set padding to the body left & right*/
   font-family: Lato;
 }
@@ -67,21 +67,38 @@ nav img {
 }
 
 nav,
-nav section,
-nav section ul {
+nav section {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: space-evenly;
+}
+
+nav section {
+  gap: 3rem;
+  color: white;
 }
 
 nav section ul {
+  display: flex;
   text-transform: uppercase;
+  gap: 3rem;
+  font-weight: 500;
 }
 
 #current {
   color: gold;
   text-decoration: underline;
-  text-underline-offset: 5px;
+  text-underline-offset: 0.5rem;
+  position: relative;
+}
+
+#current:after{
+  content: "";
+  background: gold;
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  height: 3px;
+  width: 100% ;
 }
 
 main {
@@ -149,7 +166,8 @@ article h4 {
   padding-bottom: 1.5rem;
 }
 
-article h4:after, header h2:after {
+article h4:after,
+header h2:after {
   content: "";
   background: #f38181;
   position: absolute;
@@ -161,5 +179,5 @@ article h4:after, header h2:after {
 
 header h2:after {
   top: 60px;
-  left: calc( 100% - ( 50% + 30px ) );
+  left: calc(100% - (50% + 30px));
 }
