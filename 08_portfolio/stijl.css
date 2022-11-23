@@ -1,0 +1,84 @@
+/* drie basisstijlregels om je te helpen */
+:root {
+  font-size: 62.5%; /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */
+
+  /* we definiëren hier al kleuren, die we kunnen hergebruiken in de rest van de css
+    we stellen die 1 keer in, en hergebruiken die overal
+    op die manier, als je ooit dark-background-color moet veranderne, doe je dat op 1 plaats
+    */
+  --dark-font-color: #666d89;
+  --light-font-color: rgba(255, 255, 255, 0.446);
+  --dark-background-color: rgb(52, 57, 72);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+article {
+  display: flex;
+  gap: 20px;
+  width: 285px;
+}
+
+main > section {
+  padding: 40px;
+}
+
+main > section.services-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main > section.portfolio-section > div {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-template-rows: repeat(5, max-content);
+  gap: 50px;
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--light-font-color);
+  background-color: var(--dark-background-color);
+}
+
+/*
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    grid-template-rows: repeat(5, max-content);
+    gap: 50px
+*/
