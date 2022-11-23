@@ -60,6 +60,7 @@ main > section.services-section > div {
 main > section.portfolio-section > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .services-section {
@@ -71,13 +72,20 @@ main > section.portfolio-section > div {
 .portfolio-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   color: var(--light-font-color);
   background-color: var(--dark-background-color);
+  gap: 20px;
 }
 
-.portfolio-section img {
-  width: 100;
+.portfolio-section div img {
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+
+  transition: scale 300ms ease, filter 500ms ease;
+}
+
+img:hover {
+  scale: 1.1;
+  filter: contrast(120%);
 }
