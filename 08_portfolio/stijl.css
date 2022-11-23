@@ -43,6 +43,8 @@ article {
   display: flex;
   gap: 20px;
   width: 285px;
+  /* ensure it takes the full space when possible */
+  flex-grow: 1;
 }
 
 main > section {
