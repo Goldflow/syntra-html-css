@@ -57,9 +57,7 @@ main > section.services-section > div {
 
 main > section.portfolio-section > div {
   display: grid;
-  grid-template-columns: repeat(5, max-content);
-  grid-template-rows: repeat(5, max-content);
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .services-section {
