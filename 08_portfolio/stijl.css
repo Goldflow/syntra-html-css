@@ -89,3 +89,7 @@ img:hover {
   scale: 1.1;
   filter: contrast(120%);
 }
+
+ul:has(.dangerous) {
+  background-color: red;
+}

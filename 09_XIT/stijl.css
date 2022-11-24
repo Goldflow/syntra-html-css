@@ -1,0 +1,29 @@
+/* drie basisstijlregels om je te helpen */
+:root {font-size: 100%;  /* zet je dit op 62.5%, dan is elke rem 10px waard, anders 16px */ }
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+/* hier komt jouw css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 100px;
+    background-color: black;
+}
+
+main {
+    background-image: url(xit-bg.png);
+    background-size: cover;
+    background-position: center center;
+    flex-grow: 1;
+}
+
+footer {
+    height: 200px;
+    background-color: coral;
+}

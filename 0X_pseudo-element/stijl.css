@@ -12,15 +12,27 @@ html {
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
-.exciting::before {
-    content: " <- EXCITING!";
-    color: green;
-  }
-  
-  .boring::before {
-    content: " <- BORING";
-    color: red;
-  }
+.exciting::after {
+  content: " <- EXCITING!";
+  color: green;
+}
+
+.boring::after {
+  content: " <- BORING";
+  color: red;
+}
+
+p::spelling-error {
+  text-decoration: wavy red;
+}
+
+div > p {
+  background-color: yellow;
+}
+
+div + p {
+  background-color: yellow;
+}
